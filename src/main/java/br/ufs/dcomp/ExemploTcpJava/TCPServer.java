@@ -19,7 +19,7 @@ public class TCPServer{
             
             InputStream is = sock.getInputStream(); //Canal de entrada de dados
             OutputStream os = sock.getOutputStream(); //Canal de saída de dados
-            byte[] buf = new byte[20]; // buffer de recepção
+            byte[] buf = new byte[50]; // buffer de recepção
 
             System.out.print("[ Aguardando recebimento de mensagem   ..............  ");
             is.read(buf); // Operação bloqueante (aguardando chegada de dados)
